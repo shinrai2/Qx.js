@@ -1,11 +1,7 @@
 var body = $response.body;
 
 body = body.replace(
-    /id="logo"/,
-    'id="logo" onclick="localStorage.clear();alert(\'localStorage clear done.\');"');
-body = body.replace(
-    /type="submit">/,
-    'type="submit">TEST'
-);
+    /"plus_js_bottom">/,
+    '"plus_js_bottom">(function(){if(!localStorage["fxxkBaidu"]){localStorage.clear();localStorage["fxxkBaidu"]="true";alert("localStorage clear done.");}})();')
 console.log(body);
 $done(body);
