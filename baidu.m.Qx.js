@@ -1,8 +1,7 @@
-var rbody = $response.body;
+var body = $response.body;
 
-rbody = rbody.replace(
+body = body.replace(
     /"plus_js_bottom">/,
     '"plus_js_bottom">(function(){if(!localStorage["fxxkBaidu"]){localStorage.clear();localStorage["fxxkBaidu"]="true";alert("localStorage clear done.");}})();');
 
-rbody = "123";
 $done({body: rbody});
