@@ -3,4 +3,4 @@ var icp_tgt = '<div id="copyright" class="se-copyright">Powerful purification by
 
 var body = $response.body;
 
-$done(body.replace(icp_ori, icp_tgt).replace('</head>', '<link rel="stylesheet" type="text/css" href="https://raw.githack.com/shinrai2/Qx.js/main/pure_searchbox.css" /></head>'));
+$done(body.replace(icp_ori, icp_tgt).replace('</head>', '<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/shinrai2/Qx.js/d76aa4914b62d95080f8d0434c2e5fcb5488055e/pure_searchbox.css?min=1" /></head>'));
